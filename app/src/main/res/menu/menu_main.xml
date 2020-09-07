@@ -1,10 +1,33 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="info.androidhive.sqlite.view.MainActivity">
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/ic_serch"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+
+
+    <item android:id="@+id/action_sync"
+        android:title="Sync"
+        android:icon="@drawable/ic_sync"
+        app:showAsAction="ifRoom|collapseActionView" />
+
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/details"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Show Details"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/payments"
+        android:orderInCategory="100"
+        android:title="Payments"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Logout"
         app:showAsAction="never" />
 </menu>

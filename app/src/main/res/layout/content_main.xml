@@ -5,20 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="info.androidhive.sqlite.view.MainActivity"
+    tools:context="com.smartcoins.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <android.support.v7.widget.RecyclerView
+    <LinearLayout
+        android:id="@+id/ll"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+    <include layout="@layout/divider_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/customerhead"
+        android:text="Customers"
+        android:textSize="20sp"
+        android:orientation="horizontal"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/fee"
+            android:layout_width="180dp"
+            android:text="Fee type"
+            android:gravity="left"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/divider_vertical"/>
+
+        <TextView
+            android:id="@+id/market"
+            android:layout_width="wrap_content"
+            android:text="Market "
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/customerheads"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/customerhead"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:text="Customers"
+        android:textSize="20sp">
+
+        <TextView
+            android:id="@+id/zone"
+            android:layout_width="180dp"
+            android:text="Zone"
+            android:textSize="12sp"
+            android:gravity="left"
+
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/divider_vertical"/>
+
+
+        <TextView
+            android:id="@+id/plot"
+            android:layout_width="wrap_content"
+            android:text="Plot"
+            android:gravity="left"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <include layout="@layout/divider_horizontal"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_below="@+id/ll"
         android:layout_height="match_parent" />
 
     <TextView
         android:id="@+id/empty_notes_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/margin_top_no_notes"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="78dp"
+        android:layout_marginBottom="336dp"
         android:fontFamily="sans-serif-light"
         android:text="@string/msg_no_notes"
         android:textColor="@color/msg_no_notes"

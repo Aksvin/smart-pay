@@ -1,9 +1,25 @@
 <resources>
-    <string name="app_name">Notes</string>
+    <string name="app_name">SmartPay</string>
     <string name="action_settings">Settings</string>
     <string name="activity_title_home">Notes</string>
-    <string name="msg_no_notes">No notes found!</string>
-    <string name="lbl_new_note_title">New Note</string>
-    <string name="lbl_edit_note_title">Edit Note</string>
-    <string name="hint_enter_note">Enter your note!</string>
+    <string name="msg_no_notes">No customers found!</string>
+    <string name="lbl_new_note_title">New Customer</string>
+    <string name="lbl_edit_note_title">Edit Customer</string>
+    <string name="hint_enter_note">Customer name</string>
+
+
+    <array name="markets">
+        <item>Mbulumbuzi Market</item>
+    </array>
+    <array name="fee_type">
+        <item>--select Fee type--</item>
+    </array>
+    <array name="zones">
+        <item>--select Zones--</item>
+    </array>
+    <array name="plots">
+        <item>--select Plots--</item>
+    </array>
+
+
 </resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_background"
+    android:orientation="vertical"
+
+    tools:context="com.smartcoins.Login">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp">
+        </ImageView>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/logo"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColorHint="#FFFFFF"
+            android:drawablePadding="@dimen/dimen_10"
+            android:visibility="gone"
+            android:textSize="25sp"
+            android:background="@drawable/logo_background"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:hint="SMART PAY"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:id="@+id/empid"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:textColorHint="#FFFFFF"
+
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="@dimen/dimen_10"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/round_background"
+            android:hint="Enter phone"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/password"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:textColorHint="#FFFFFF"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="@dimen/dimen_10"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/round_background"
+            android:hint="Enter pin"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:layout_width="150dp"
+            android:id="@+id/login"
+            android:textColor="#FFF"
+            android:text="LOGIN"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_background"
+            android:textSize="16sp"
+            android:layout_marginTop="50dp"
+            android:layout_height="40dp"/>
+
+
+</LinearLayout>
